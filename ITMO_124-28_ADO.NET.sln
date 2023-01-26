@@ -5,6 +5,13 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. DBConnection", "01. DBConnection\01. DBConnection.csproj", "{8E73AE3A-8F9F-432F-A2A6-D8B43F6A3F01}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Create Connection String", "Create Connection String", "{8F89562C-40B8-4A34-896A-E05BDB4769D4}"
+	ProjectSection(SolutionItems) = preProject
+		Practical lesson 1\File#1.txt = Practical lesson 1\File#1.txt
+		Practical lesson 1\File#1.udl = Practical lesson 1\File#1.udl
+		Practical lesson 1\instnwnd.sql = Practical lesson 1\instnwnd.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
