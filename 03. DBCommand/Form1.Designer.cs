@@ -177,7 +177,7 @@
             this.Controls.Add(this.ResultsTextBox);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "03. DBCommand";
             this.ResumeLayout(false);
             this.PerformLayout();
 

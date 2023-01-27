@@ -16,6 +16,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. DSConnect", "02. DSConn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. DBCommand", "03. DBCommand\03. DBCommand.csproj", "{FA2DD76D-0DE8-4BBC-A2F5-F300982F3297}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. DatasetDesigner", "04. DatasetDesigner\04. DatasetDesigner.csproj", "{29616235-D292-4952-98C5-769A828DBB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. CreatingDataTable", "05. CreatingDataTable\05. CreatingDataTable.csproj", "{9442D230-028F-4F74-A6BB-397345444388}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +38,14 @@ Global
 		{FA2DD76D-0DE8-4BBC-A2F5-F300982F3297}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA2DD76D-0DE8-4BBC-A2F5-F300982F3297}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA2DD76D-0DE8-4BBC-A2F5-F300982F3297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29616235-D292-4952-98C5-769A828DBB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29616235-D292-4952-98C5-769A828DBB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29616235-D292-4952-98C5-769A828DBB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29616235-D292-4952-98C5-769A828DBB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9442D230-028F-4F74-A6BB-397345444388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9442D230-028F-4F74-A6BB-397345444388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9442D230-028F-4F74-A6BB-397345444388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9442D230-028F-4F74-A6BB-397345444388}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

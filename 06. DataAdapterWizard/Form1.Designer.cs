@@ -1,4 +1,4 @@
-﻿namespace _02.DSConnect
+﻿namespace _06.DataAdapterWizard
 {
     partial class Form1
     {
@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "Form1";
-            this.Text = "02. DSConnect";
+            this.Text = "06. DataAdapterWizard";
             this.ResumeLayout(false);
 
         }

@@ -1,4 +1,4 @@
-﻿namespace _02.DSConnect
+﻿namespace _04.DatasetDesigner
 {
     partial class Form1
     {
@@ -28,20 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.GetCustomersButton = new System.Windows.Forms.Button();
+            this.CustomersListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
+            // 
+            // GetCustomersButton
+            // 
+            this.GetCustomersButton.Location = new System.Drawing.Point(13, 13);
+            this.GetCustomersButton.Name = "GetCustomersButton";
+            this.GetCustomersButton.Size = new System.Drawing.Size(127, 47);
+            this.GetCustomersButton.TabIndex = 0;
+            this.GetCustomersButton.Text = "Get Customers";
+            this.GetCustomersButton.UseVisualStyleBackColor = true;
+            this.GetCustomersButton.Click += new System.EventHandler(this.GetCustomersButton_Click);
+            // 
+            // CustomersListBox
+            // 
+            this.CustomersListBox.FormattingEnabled = true;
+            this.CustomersListBox.ItemHeight = 17;
+            this.CustomersListBox.Location = new System.Drawing.Point(12, 221);
+            this.CustomersListBox.Name = "CustomersListBox";
+            this.CustomersListBox.Size = new System.Drawing.Size(776, 208);
+            this.CustomersListBox.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CustomersListBox);
+            this.Controls.Add(this.GetCustomersButton);
             this.Name = "Form1";
-            this.Text = "02. DSConnect";
+            this.Text = "04. DatasetDesigner";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button GetCustomersButton;
+        private System.Windows.Forms.ListBox CustomersListBox;
     }
 }
 

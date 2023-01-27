@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{776AB8F9-0793-4ADB-889E-ABA4C3E79533}</ProjectGuid>
+    <ProjectGuid>{29616235-D292-4952-98C5-769A828DBB7A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_02.DSConnect</RootNamespace>
-    <AssemblyName>_02.DSConnect</AssemblyName>
+    <RootNamespace>_04.DatasetDesigner</RootNamespace>
+    <AssemblyName>_04.DatasetDesigner</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -75,9 +75,9 @@
       <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
     </None>
     <None Include="NorthwindDataSet.xsd">
+      <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>NorthwindDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </None>
     <None Include="NorthwindDataSet.xss">
       <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
