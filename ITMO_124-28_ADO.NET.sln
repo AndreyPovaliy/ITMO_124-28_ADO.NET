@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Create Connection String", 
 		Practical lesson 1\instnwnd.sql = Practical lesson 1\instnwnd.sql
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. DSConnect", "02. DSConnect\02. DSConnect.csproj", "{776AB8F9-0793-4ADB-889E-ABA4C3E79533}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. DBCommand", "03. DBCommand\03. DBCommand.csproj", "{FA2DD76D-0DE8-4BBC-A2F5-F300982F3297}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +26,14 @@ Global
 		{8E73AE3A-8F9F-432F-A2A6-D8B43F6A3F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E73AE3A-8F9F-432F-A2A6-D8B43F6A3F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E73AE3A-8F9F-432F-A2A6-D8B43F6A3F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{776AB8F9-0793-4ADB-889E-ABA4C3E79533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{776AB8F9-0793-4ADB-889E-ABA4C3E79533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{776AB8F9-0793-4ADB-889E-ABA4C3E79533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{776AB8F9-0793-4ADB-889E-ABA4C3E79533}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA2DD76D-0DE8-4BBC-A2F5-F300982F3297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2DD76D-0DE8-4BBC-A2F5-F300982F3297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2DD76D-0DE8-4BBC-A2F5-F300982F3297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2DD76D-0DE8-4BBC-A2F5-F300982F3297}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
