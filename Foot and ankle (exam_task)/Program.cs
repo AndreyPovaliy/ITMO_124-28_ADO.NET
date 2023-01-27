@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _06.DataAdapterWizard
+namespace Foot_and_ankle__exam_task_
 {
     internal static class Program
     {
@@ -16,9 +16,7 @@ namespace _06.DataAdapterWizard
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Password());
         }
-
-
     }
 }

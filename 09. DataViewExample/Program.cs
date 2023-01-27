@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _06.DataAdapterWizard
+namespace _09.DataViewExample
 {
     internal static class Program
     {
@@ -18,7 +18,5 @@ namespace _06.DataAdapterWizard
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
-
-
     }
 }
