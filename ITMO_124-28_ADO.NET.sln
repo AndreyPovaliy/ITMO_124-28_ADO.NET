@@ -28,6 +28,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. WorkingDataTable", "08.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. DataViewExample", "09. DataViewExample\09. DataViewExample.csproj", "{7572E018-C91C-41E5-A346-A724BC24D1A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. DataSourcesWizard", "10. DataSourcesWizard\10. DataSourcesWizard.csproj", "{FBA5E3F6-0289-4C05-A4C4-4BC010C1E6D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. DataBindingSimple", "11. DataBindingSimple\11. DataBindingSimple.csproj", "{38DB811C-DC42-4113-8849-8026C5E18901}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12. DataBindingComplex", "12. DataBindingComplex\12. DataBindingComplex.csproj", "{65957F99-792D-47DC-9AEE-B8914AAF1054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13. DataGridViewExample", "13. DataGridViewExample\13. DataGridViewExample.csproj", "{5D64B5F9-A216-492F-AF74-48A68F3A2672}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14. Linq_Student", "14. Linq_Student\14. Linq_Student.csproj", "{975DD03C-FD2C-4322-8851-BF486226BFF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +80,26 @@ Global
 		{7572E018-C91C-41E5-A346-A724BC24D1A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7572E018-C91C-41E5-A346-A724BC24D1A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7572E018-C91C-41E5-A346-A724BC24D1A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA5E3F6-0289-4C05-A4C4-4BC010C1E6D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA5E3F6-0289-4C05-A4C4-4BC010C1E6D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA5E3F6-0289-4C05-A4C4-4BC010C1E6D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA5E3F6-0289-4C05-A4C4-4BC010C1E6D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38DB811C-DC42-4113-8849-8026C5E18901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38DB811C-DC42-4113-8849-8026C5E18901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38DB811C-DC42-4113-8849-8026C5E18901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38DB811C-DC42-4113-8849-8026C5E18901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65957F99-792D-47DC-9AEE-B8914AAF1054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65957F99-792D-47DC-9AEE-B8914AAF1054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65957F99-792D-47DC-9AEE-B8914AAF1054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65957F99-792D-47DC-9AEE-B8914AAF1054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D64B5F9-A216-492F-AF74-48A68F3A2672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D64B5F9-A216-492F-AF74-48A68F3A2672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D64B5F9-A216-492F-AF74-48A68F3A2672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D64B5F9-A216-492F-AF74-48A68F3A2672}.Release|Any CPU.Build.0 = Release|Any CPU
+		{975DD03C-FD2C-4322-8851-BF486226BFF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975DD03C-FD2C-4322-8851-BF486226BFF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975DD03C-FD2C-4322-8851-BF486226BFF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975DD03C-FD2C-4322-8851-BF486226BFF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

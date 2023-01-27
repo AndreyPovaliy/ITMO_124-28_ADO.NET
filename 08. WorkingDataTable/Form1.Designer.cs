@@ -283,7 +283,7 @@
             this.Controls.Add(this.FillTableButton);
             this.Controls.Add(this.CustomersDataGridView);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "08. WorkingDataTable";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CustomersDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet1)).EndInit();
