@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Foot_and_ankle__exam_task_.Properties
+namespace _15.CustomerManager.Properties
 {
 
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Foot_and_ankle__exam_task_
+namespace _15.CustomerManager
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace Foot_and_ankle__exam_task_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Password());
+            Application.Run(new CustomerViewer());
         }
     }
 }

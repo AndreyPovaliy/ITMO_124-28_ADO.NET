@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
-[assembly: AssemblyTitle("Foot and ankle (exam_task)")]
+[assembly: AssemblyTitle("15. CustomerManager")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Foot and ankle (exam_task)")]
+[assembly: AssemblyProduct("15. CustomerManager")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID служит для идентификации библиотеки типов, если этот проект будет видимым для COM
-[assembly: Guid("7184b069-cd13-48ea-8c2f-c205fc978344")]
+[assembly: Guid("dbed210a-0a0e-4ef0-9463-ce90f0651ab2")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

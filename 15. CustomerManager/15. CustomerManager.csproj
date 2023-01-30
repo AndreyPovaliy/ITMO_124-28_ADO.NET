@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7184B069-CD13-48EA-8C2F-C205FC978344}</ProjectGuid>
+    <ProjectGuid>{DBED210A-0A0E-4EF0-9463-CE90F0651AB2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Foot_and_ankle__exam_task_</RootNamespace>
-    <AssemblyName>Foot and ankle %28exam_task%29</AssemblyName>
+    <RootNamespace>_15.CustomerManager</RootNamespace>
+    <AssemblyName>_15.CustomerManager</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,34 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FootAnlke_doctor.cs">
+    <Compile Include="CustomerViewer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FootAnlke_doctor.Designer.cs">
-      <DependentUpon>FootAnlke_doctor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FootAnlke_pathient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FootAnlke_pathient.Designer.cs">
-      <DependentUpon>FootAnlke_pathient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FootAnlke_resercher.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FootAnlke_resercher.Designer.cs">
-      <DependentUpon>FootAnlke_resercher.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Password.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Password.Designer.cs">
-      <DependentUpon>Password.cs</DependentUpon>
+    <Compile Include="CustomerViewer.Designer.cs">
+      <DependentUpon>CustomerViewer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Password.resx">
-      <DependentUpon>Password.cs</DependentUpon>
+    <EmbeddedResource Include="CustomerViewer.resx">
+      <DependentUpon>CustomerViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -96,6 +78,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\15.1 CodeFirst\15.1 CodeFirst.csproj">
+      <Project>{aa2a5cd0-4d8c-4f66-b40d-70a41aefcc12}</Project>
+      <Name>15.1 CodeFirst</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Foot_and_ankle__exam_task_
+namespace _15.CustomerManager
 {
-    public partial class Password : Form
+    public partial class CustomerViewer : Form
     {
-        public Password()
+        public CustomerViewer()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
