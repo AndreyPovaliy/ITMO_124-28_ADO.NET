@@ -30,85 +30,58 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Database));
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.TableGrid = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.sqlSelectCommand1 = new System.Data.SqlClient.SqlCommand();
+            this.sqlConnection1 = new System.Data.SqlClient.SqlConnection();
             this.sqlInsertCommand1 = new System.Data.SqlClient.SqlCommand();
             this.sqlUpdateCommand1 = new System.Data.SqlClient.SqlCommand();
             this.sqlDeleteCommand1 = new System.Data.SqlClient.SqlCommand();
             this.sqlDataAdapter1 = new System.Data.SqlClient.SqlDataAdapter();
-            this.sqlConnection1 = new System.Data.SqlClient.SqlConnection();
-            this.apressFinancialDataSet1 = new _17.Exam_task.ApressFinancialDataSet();
-            ((System.ComponentModel.ISupportInitialize)(this.TableGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.apressFinancialDataSet1)).BeginInit();
+            this.dataSet11 = new _17.Exam_task.DataSet1();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.UpdateValueButton = new System.Windows.Forms.Button();
+            this.AcceptChangesButton = new System.Windows.Forms.Button();
+            this.RejectChangesButton = new System.Windows.Forms.Button();
+            this.CellValueTextBox = new System.Windows.Forms.TextBox();
+            this.OriginalDRVTextBox = new System.Windows.Forms.TextBox();
+            this.CurrentDRVTextBox = new System.Windows.Forms.TextBox();
+            this.RowStateTextBox = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(15, 82);
+            this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(235, 47);
+            this.button1.Size = new System.Drawing.Size(138, 33);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Получить данные о покупателях";
+            this.button1.Text = "Получить данные";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // dataGridView1
             // 
-            this.button2.Location = new System.Drawing.Point(578, 30);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(181, 51);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Сохранить изменения";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(578, 87);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(181, 51);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Удалить строку";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // TableGrid
-            // 
-            this.TableGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TableGrid.Location = new System.Drawing.Point(15, 167);
-            this.TableGrid.Name = "TableGrid";
-            this.TableGrid.RowHeadersWidth = 51;
-            this.TableGrid.RowTemplate.Height = 27;
-            this.TableGrid.Size = new System.Drawing.Size(776, 272);
-            this.TableGrid.TabIndex = 3;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(15, 30);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(235, 46);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Получить данные о продуктах";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(277, 82);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(225, 47);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Добавить строку";
-            this.button5.UseVisualStyleBackColor = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 135);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 27;
+            this.dataGridView1.Size = new System.Drawing.Size(776, 303);
+            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.Click += new System.EventHandler(this.dataGridView1_Click);
             // 
             // sqlSelectCommand1
             // 
-            this.sqlSelectCommand1.CommandText = "SELECT * FROM CustomerDetails.Customers";
+            this.sqlSelectCommand1.CommandText = "SELECT * FROM  CustomerDetails.Customers";
             this.sqlSelectCommand1.Connection = this.sqlConnection1;
+            // 
+            // sqlConnection1
+            // 
+            this.sqlConnection1.ConnectionString = "Data Source=WIN-CDJM1LM10O7\\SQLEXPRESS;Initial Catalog=ApressFinancial;Integrated" +
+    " Security=True";
+            this.sqlConnection1.FireInfoMessageEventOnUserErrors = false;
             // 
             // sqlInsertCommand1
             // 
@@ -194,52 +167,134 @@
                         new System.Data.Common.DataColumnMapping("DateAdded", "DateAdded")})});
             this.sqlDataAdapter1.UpdateCommand = this.sqlUpdateCommand1;
             // 
-            // sqlConnection1
+            // dataSet11
             // 
-            this.sqlConnection1.ConnectionString = "Data Source=WIN-CDJM1LM10O7\\SQLEXPRESS;Initial Catalog=ApressFinancial;Integrated" +
-    " Security=True";
-            this.sqlConnection1.FireInfoMessageEventOnUserErrors = false;
+            this.dataSet11.DataSetName = "DataSet1";
+            this.dataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // apressFinancialDataSet1
+            // button2
             // 
-            this.apressFinancialDataSet1.DataSetName = "ApressFinancialDataSet";
-            this.apressFinancialDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.button2.Location = new System.Drawing.Point(12, 51);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(138, 29);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Добавить строку";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(12, 86);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(138, 26);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Удалить";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // UpdateValueButton
+            // 
+            this.UpdateValueButton.Location = new System.Drawing.Point(183, 12);
+            this.UpdateValueButton.Name = "UpdateValueButton";
+            this.UpdateValueButton.Size = new System.Drawing.Size(196, 33);
+            this.UpdateValueButton.TabIndex = 4;
+            this.UpdateValueButton.Text = "Обновить";
+            this.UpdateValueButton.UseVisualStyleBackColor = true;
+            this.UpdateValueButton.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // AcceptChangesButton
+            // 
+            this.AcceptChangesButton.Location = new System.Drawing.Point(183, 51);
+            this.AcceptChangesButton.Name = "AcceptChangesButton";
+            this.AcceptChangesButton.Size = new System.Drawing.Size(196, 29);
+            this.AcceptChangesButton.TabIndex = 5;
+            this.AcceptChangesButton.Text = "Принять";
+            this.AcceptChangesButton.UseVisualStyleBackColor = true;
+            this.AcceptChangesButton.Click += new System.EventHandler(this.AcceptChangesButton_Click);
+            // 
+            // RejectChangesButton
+            // 
+            this.RejectChangesButton.Location = new System.Drawing.Point(183, 86);
+            this.RejectChangesButton.Name = "RejectChangesButton";
+            this.RejectChangesButton.Size = new System.Drawing.Size(196, 26);
+            this.RejectChangesButton.TabIndex = 6;
+            this.RejectChangesButton.Text = "Отклонить";
+            this.RejectChangesButton.UseVisualStyleBackColor = true;
+            this.RejectChangesButton.Click += new System.EventHandler(this.RejectChangesButton_Click);
+            // 
+            // CellValueTextBox
+            // 
+            this.CellValueTextBox.Location = new System.Drawing.Point(411, 12);
+            this.CellValueTextBox.Name = "CellValueTextBox";
+            this.CellValueTextBox.Size = new System.Drawing.Size(353, 25);
+            this.CellValueTextBox.TabIndex = 7;
+            // 
+            // OriginalDRVTextBox
+            // 
+            this.OriginalDRVTextBox.Location = new System.Drawing.Point(411, 43);
+            this.OriginalDRVTextBox.Name = "OriginalDRVTextBox";
+            this.OriginalDRVTextBox.Size = new System.Drawing.Size(353, 25);
+            this.OriginalDRVTextBox.TabIndex = 8;
+            // 
+            // CurrentDRVTextBox
+            // 
+            this.CurrentDRVTextBox.Location = new System.Drawing.Point(411, 73);
+            this.CurrentDRVTextBox.Name = "CurrentDRVTextBox";
+            this.CurrentDRVTextBox.Size = new System.Drawing.Size(353, 25);
+            this.CurrentDRVTextBox.TabIndex = 9;
+            // 
+            // RowStateTextBox
+            // 
+            this.RowStateTextBox.Location = new System.Drawing.Point(411, 104);
+            this.RowStateTextBox.Name = "RowStateTextBox";
+            this.RowStateTextBox.Size = new System.Drawing.Size(353, 25);
+            this.RowStateTextBox.TabIndex = 10;
             // 
             // Database
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.TableGrid);
+            this.Controls.Add(this.RowStateTextBox);
+            this.Controls.Add(this.CurrentDRVTextBox);
+            this.Controls.Add(this.OriginalDRVTextBox);
+            this.Controls.Add(this.CellValueTextBox);
+            this.Controls.Add(this.RejectChangesButton);
+            this.Controls.Add(this.AcceptChangesButton);
+            this.Controls.Add(this.UpdateValueButton);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Database";
             this.Text = "Database";
             this.Load += new System.EventHandler(this.Database_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.TableGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.apressFinancialDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView TableGrid;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Data.SqlClient.SqlCommand sqlSelectCommand1;
         private System.Data.SqlClient.SqlConnection sqlConnection1;
         private System.Data.SqlClient.SqlCommand sqlInsertCommand1;
         private System.Data.SqlClient.SqlCommand sqlUpdateCommand1;
         private System.Data.SqlClient.SqlCommand sqlDeleteCommand1;
         private System.Data.SqlClient.SqlDataAdapter sqlDataAdapter1;
-        private ApressFinancialDataSet apressFinancialDataSet1;
+        private DataSet1 dataSet11;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button UpdateValueButton;
+        private System.Windows.Forms.Button AcceptChangesButton;
+        private System.Windows.Forms.Button RejectChangesButton;
+        private System.Windows.Forms.TextBox CellValueTextBox;
+        private System.Windows.Forms.TextBox OriginalDRVTextBox;
+        private System.Windows.Forms.TextBox CurrentDRVTextBox;
+        private System.Windows.Forms.TextBox RowStateTextBox;
     }
 }
